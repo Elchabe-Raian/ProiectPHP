@@ -60,7 +60,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-pills mb-3">
                 <li class="nav-item">
                     <a data-toggle="tab" class="nav-link" href="#tab1">Fibonacci Sequence</a>
                 </li>
@@ -79,7 +79,7 @@
             </ul>
         </div>
     </nav>
-
+    
     <!-- Create a Bootstrap Tab Container here -->
     <div class="container">
         <div class="tab-content">
@@ -285,3 +285,16 @@ function reverseString($str) {
     return strrev($str);
 }
 ?>
+<script>
+$(function() {
+  
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    localStorage.setItem('lastTab', $(this).attr('href'));
+  });
+  var lastTab = localStorage.getItem('lastTab');
+  
+  if (lastTab) {
+    $('[href="' + lastTab + '"]').tab('show');
+  }
+  
+});</script>
