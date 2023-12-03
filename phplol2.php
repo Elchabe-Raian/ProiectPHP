@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Algorithms with Bootstrap</title>
-    <!-- Add Bootstrap CSS link here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 0px; /* Adjusted top padding for the fixed navbar */
+        }
+
+        .algorithm-tab {
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .tab-content {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
+<body>
+
+    <div class="header">
+        <h1>PHP Algorithms with Bootstrap</h1>
+        <p>Explore various algorithms implemented in PHP</p>
+    </div>
 
 <body>
 
@@ -179,6 +222,10 @@
 
             <!-- Add other algorithm tabs and input forms here -->
         </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 PHP Algorithms</p>
     </div>
 
     <!-- Add Bootstrap JS and Popper.js scripts here -->
